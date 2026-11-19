@@ -15,7 +15,7 @@ const featured = [
     live: "https://www.glosscanner.com",
     repo: GH + "Glosscanner_admin",
     repoLabel: { es: "Repo del admin", en: "Admin repo" },
-    image: "", // ej: "img/glosscanner.png"
+    image: "glosscannerdev.png",
     gradient: "linear-gradient(135deg, #ff5ca8, #ff9a5c)",
   },
   {
@@ -28,7 +28,7 @@ const featured = [
     tags: ["TypeScript", "Web app", "Content"],
     live: "https://nico-stanza.com",
     repo: null,
-    image: "",
+    image: "nicostanzadev.png",
     gradient: "linear-gradient(135deg, #7c5cff, #5cc8ff)",
   },
   {
@@ -41,7 +41,7 @@ const featured = [
     tags: ["Angular", "TypeScript", "Java", "JWT"],
     live: "https://saludlink-frontend.vercel.app",
     repo: GH + "saludlink-front-ofi",
-    image: "",
+    image: "saludlinkdev.png",
     gradient: "linear-gradient(135deg, #22c39a, #3b82f6)",
   },
   {
@@ -54,7 +54,7 @@ const featured = [
     tags: ["JavaScript", "Python", "Game"],
     live: "https://quantum-rush-ten.vercel.app",
     repo: GH + "Quantum-Rush",
-    image: "",
+    image: "quantumdev.png",
     gradient: "linear-gradient(135deg, #1e1b4b, #7c5cff)",
   },
 ];
