@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicole Sihuincha · Frontend Developer</title>
+  <meta name="description" content="Portafolio de Nicole Sihuincha Schermuly — Frontend Developer. Proyectos en TypeScript, React, Next.js y Angular." />
+  <meta property="og:title" content="Nicole Sihuincha · Frontend Developer" />
+  <meta property="og:description" content="Proyectos en TypeScript, React, Next.js y Angular." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%237c5cff'/><text x='50' y='66' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>N</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Aplica el tema guardado antes de pintar, para evitar parpadeo
+    try {
+      const t = localStorage.getItem("theme");
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" aria-label="Inicio">nicole<span>.dev</span></a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="langToggle" aria-label="Cambiar idioma">EN</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Cambiar tema">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container">
+      <p class="hero__eyebrow mono" data-i18n="hero.eyebrow">Hola, soy</p>
+      <h1 class="hero__title">Nicole Sihuincha<br /><span class="gradient-text">Frontend Developer</span></h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">
+        Estudiante de Ciencias de la Computación en la UPC. Construyo productos web reales con
+        TypeScript, React, Next.js y Angular — y les sumo datos e IA cuando hacen la diferencia.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#proyectos" data-i18n="hero.cta">Ver proyectos</a>
+        <a class="btn btn--ghost" href="https://github.com/sowiexsker894" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/nicoleschermacha" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <ul class="hero__stats">
+        <li><strong>4</strong><span data-i18n="hero.stat1">productos en producción</span></li>
+        <li><strong>20+</strong><span data-i18n="hero.stat2">repositorios</span></li>
+        <li><strong>C1</strong><span data-i18n="hero.stat3">inglés</span></li>
+      </ul>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section container" id="proyectos">
+      <h2 class="section__title"><span class="mono">01.</span> <span data-i18n="projects.title">Proyectos destacados</span></h2>
+      <div class="featured" id="featuredGrid"></div>
+
+      <h3 class="section__subtitle" data-i18n="projects.more">Otros proyectos</h3>
+      <div class="filters" id="filters" role="group" aria-label="Filtrar proyectos"></div>
+      <div class="grid" id="otherGrid"></div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section container" id="stack">
+      <h2 class="section__title"><span class="mono">02.</span> Stack</h2>
+      <div class="stack">
+        <div class="stack__group">
+          <h3 data-i18n="stack.front">Frontend</h3>
+          <ul class="chips">
+            <li>TypeScript</li><li>JavaScript</li><li>React</li><li>Next.js</li>
+            <li>Angular</li><li>Angular Material</li><li>HTML5</li><li>CSS3</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h3 data-i18n="stack.back">Backend &amp; datos</h3>
+          <ul class="chips">
+            <li>Java</li><li>Node.js</li><li>Python</li><li>Go</li><li>SQL</li><li>REST APIs · JWT</li>
+          </ul>
+        </div>
+        <div class="stack__group">
+          <h3 data-i18n="stack.tools">Herramientas</h3>
+          <ul class="chips">
+            <li>Git &amp; GitHub</li><li>Vercel</li><li>Netlify</li><li>Docker</li><li>Webflow</li><li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section class="section container" id="sobre-mi">
+      <h2 class="section__title"><span class="mono">03.</span> <span data-i18n="about.title">Sobre mí</span></h2>
+      <div class="about">
+        <div class="about__text">
+          <p data-i18n="about.p1">
+            Estudio Ciencias de la Computación en la UPC (Lima) e hice un semestre de intercambio en
+            SRH University Heidelberg, Alemania. Soy fundadora de Glosscanner, un metabuscador de
+            servicios y productos de belleza que ya está en producción.
+          </p>
+          <p data-i18n="about.p2">
+            Me gusta llevar un producto de la idea al deploy: diseñar la interfaz, conectarla con APIs
+            y cuidar los detalles que hacen que una web se sienta rápida y clara. Mi experiencia en
+            análisis de datos y machine learning me ayuda a construir interfaces que toman decisiones
+            con datos.
+          </p>
+        </div>
+        <ul class="about__facts">
+          <li><span>🎓</span><span data-i18n="about.f1">Ciencias de la Computación · UPC</span></li>
+          <li><span>🇩🇪</span><span data-i18n="about.f2">Intercambio · SRH Heidelberg</span></li>
+          <li><span>🚀</span><span data-i18n="about.f3">Fundadora de Glosscanner</span></li>
+          <li><span>🌎</span><span data-i18n="about.f4">Español nativo · Inglés C1</span></li>
+          <li><span>✍️</span><span data-i18n="about.f5">Escritora bilingüe en Nicostanza</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section container contact" id="contacto">
+      <h2 class="section__title"><span class="mono">04.</span> <span data-i18n="contact.title">Hablemos</span></h2>
+      <p class="contact__text" data-i18n="contact.text">
+        Estoy buscando mi siguiente rol como Frontend Developer. Si tienes una vacante o un proyecto, escríbeme.
+      </p>
+      <div class="contact__actions">
+        <a class="btn btn--primary" href="mailto:sihuinchamireya@gmail.com">sihuinchamireya@gmail.com</a>
+        <button class="btn btn--ghost" id="copyEmail" data-i18n="contact.copy">Copiar email</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Nicole Sihuincha Schermuly · <span data-i18n="footer">Hecho a mano con HTML, CSS y JavaScript</span></p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
